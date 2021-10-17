@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.top {
+  background-image: url("/images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+}
+
+.top__header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0px 48px 0px 40px;
+}
+
+.top__header--logo:hover {
+  cursor: pointer;
+}
+
+.top__background {
+  width: 100%;
+}
+
+.top__menu {
+  color: #ffffff;
+  font-family: "Barlow";
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.13 px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.top__menu--element {
+  margin-right: 48px;
+}
+
+.top__menu--element:hover {
+  cursor: pointer;
+}
+
+.top__menu--button {
+  background: #ffffff;
+  height: 56px;
+  width: 140px;
+  border-radius: 28px;
+  border: none;
+  color: #24303e;
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.11px;
+}
+
+.top__menu--button:hover {
+  cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.heading__title {
+  color: #ffffff;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 69.05px;
+  letter-spacing: 8.75px;
+  margin-top: 105px;
+}
+
+.heading__arrow {
+  margin-top: 96.54px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.section__wrapper--wrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 27.5px;
+}
+
+.section__wrapper {
+  width: 60%;
+}
+
+.section__title {
+  color: #24303e;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49.32px;
+  letter-spacing: -0.29px;
+}
+
+.section__content {
+  color: #808397;
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.13px;
+  margin: 32px 0 40px;
+}
+
+.section__link {
+  color: #24303e;
+  width: max-content;
+  font-family: Fraunces;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  position: relative;
+}
+
+.section__link:hover {
+  cursor: pointer;
+}
+
+.section__link::after {
+  content: "";
+  height: 10px;
+  width: calc(100% + 2 * 9px);
+  left: -9px;
+  top: 60%;
+  opacity: 0.25;
+  border-radius: 28px;
+  position: absolute;
+  z-index: -1;
+}
+
+.section__link:hover::after {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.section__link--primary::after {
+  background: #fad400;
+}
+
+.section__link--secondary::after {
+  background: #fe7766;
+}
+
+.section__image {
+  width: 50%;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__wrapper {
+  width: 50%;
+  height: 80vh;
+  align-content: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 59px;
+  background-position: top;
+}
+
+.card__wrapper--primary {
+  background-image: url("/images/desktop/image-graphic-design.jpg");
+}
+
+.card__wrapper--secondary {
+  background-image: url("images/desktop/image-photography.jpg");
+}
+.card__title {
+  color: #24554a;
+  font-family: Fraunces;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 35px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: center;
+}
+
+.card__content {
+  color: #3e7467;
+  width: 50%;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: -0.11428571492433548px;
+  text-align: center;
+  margin-top: 27px;
+}
+
+.testimonial {
+  margin-top: 160px;
+  padding: 0 10%;
+}
+
+.testimonial__wrapper--wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: 81px;
+}
+
+.testimonial__wrapper {
+  width: calc((100% - 2 * 30px) / 3);
+}
+
+.testimonial__title {
+  color: #a7aaad;
+  font-family: Fraunces;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.testimonial__photo {
+  border-radius: 50%;
+  width: 16%;
+  text-align: center;
+  margin: 0 auto;
+}
+.testimonial__content {
+  color: #5b636d;
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.12857143580913544px;
+  text-align: center;
+  margin-top: 58px;
+}
+
+.testimonial__author {
+  color: #24303e;
+  font-family: Fraunces;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+  letter-spacing: -0.12857143580913544px;
+  text-align: center;
+  margin-top: 69px;
+}
+
+.testimonial__author--details {
+  color: #a7aaad;
+
+  font-family: Barlow;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.10000000149011612px;
+  text-align: center;
+  margin-top: 9px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: 160px;
+}
+
+.gallery__image {
+  width: 25%;
+}
+
+.bottom {
+  background: #90d4c6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottom__logo {
+  display: flex;
+  align-self: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-top: 72px;
+}
+
+.bottom__menu {
+  color: #458d7e;
+  box-sizing: border-box;
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.12857143580913544px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.bottom__menu--element {
+  margin: 0 57px;
+}
+
+.bottom__menu--element:hover {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.bottom__icons {
+  display: flex;
+  justify-content: center;
+  margin: 88px 0 78px;
+}
+
+.bottom__icons--icon {
+  margin: 0 18px;
+}
+
+.bottom__icons--icon:hover {
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.bottom__icons--icon:hover {
+  fill: #ffffff;
+}
