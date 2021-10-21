@@ -14,6 +14,7 @@ img {
   background-repeat: no-repeat;
   background-position: top;
   height: 100vh;
+  padding-top: 32px;
 }
 
 .top__hamburger {
@@ -28,7 +29,8 @@ img {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 48px 0px 40px;
+  padding: 0px 48px 0px 40px;
+  position: relative;
 }
 
 .top__header--logo:hover {
@@ -39,23 +41,18 @@ img {
   width: 100%;
 }
 
-.mobile-wrapper {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.mobile {
-  position: relative;
-  top: 50px;
-}
-
 .mobile-nav {
   background: #ffffff;
-  height: 305px;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
   display: none;
+  right: 24px;
+  top: 70px;
+  padding: 39px 0;
+  width: 100%;
+  max-width: 280px;
+  z-index: 1;
 }
 
 .mobile-nav::before {
@@ -77,9 +74,9 @@ img {
   font-weight: 600;
   line-height: 25px;
   text-align: center;
-  margin-top: 32px;
   list-style-type: none;
   cursor: pointer;
+  margin-bottom: 32px;
 }
 
 .mobile-nav__list-item--button {
@@ -94,7 +91,6 @@ img {
   font-size: 15px;
   line-height: 52px;
   text-align: center;
-  margin: 32px 0;
   list-style-type: none;
   cursor: pointer;
 }
@@ -220,7 +216,6 @@ img {
   opacity: 0.25;
   border-radius: 28px;
   position: absolute;
-  z-index: -1;
 }
 
 .section__link:hover::after {
@@ -253,9 +248,10 @@ img {
 
 .card__wrapper {
   width: 50%;
-  height: 80vh;
+  height: 36vw;
   align-content: center;
   background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

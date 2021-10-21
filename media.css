@@ -48,13 +48,12 @@
   }
 
   .top {
-    padding-top: 32px;
     height: 70vh;
     align-items: center;
   }
 
   .top__header {
-    padding: 13px 24px 0px;
+    padding: 0px 24px;
   }
 
   .top__hamburger {
@@ -75,10 +74,6 @@
   }
 
   .desktop-nav {
-    display: none;
-  }
-
-  .heading--active {
     display: none;
   }
 
@@ -163,5 +158,17 @@
 
   .bottom__menu {
     margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card__wrapper {
+    background-size: cover;
+  }
+}
+@media (max-width: 420px) {
+  .mobile-nav {
+    max-width: unset;
+    width: calc(100% - 2 * 24px);
   }
 }
